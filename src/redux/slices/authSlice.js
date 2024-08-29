@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { loginUser, registerUser } from '../api/auth'
+import { loginUser, registerUser } from '../../api/auth'
 
 export const loginUserThunk = createAsyncThunk('user/login', async (userData, { rejectWithValue }) => {
   try {
@@ -54,5 +54,4 @@ const userSlice = createSlice({
   },
 });
 
-export const selectAuthStatus = (state) => state.auth.status; // Selector to get 'status'
 export default userSlice.reducer;

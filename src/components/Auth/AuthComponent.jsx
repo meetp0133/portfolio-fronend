@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./AuthForm.css";
 import { useDispatch, useSelector } from "react-redux";
-import { loginUserThunk, registerUserThunk } from "../../features/authSlice";
+import { loginUserThunk, registerUserThunk } from "../../redux/slices/authSlice";
 
 function AuthComponent() {
   const [isLogin, setIsLogin] = useState(true);
